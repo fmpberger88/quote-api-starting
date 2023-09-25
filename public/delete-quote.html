@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delete Quote</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<h1>Quote API</h1>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="add-quote.html">Add a New Quote</a>
+    <a href="update-quote.html">Update Quote</a>
+    <a href="delete-quote.html">Delete Quote</a>
+</nav>
+<div id="quote-container">
+    <h2>Delete Quotes</h2>
+
+    <!-- Dropdown für die Zitatauswahl -->
+    <div>
+        <label for="quoteDropdown">Zitat auswählen:</label>
+        <select id="quoteDropdown">
+            <option value="">-- Wählen Sie ein Zitat --</option>
+        </select>
+    </div>
+
+    <!-- Bereich zum Löschen eines Zitats -->
+    <div>
+        <label for="update-quote-id">Quote ID to Delete:</label>
+        <input type="text" id="update-quote-id">
+        <button id="delete-btn">Delete Quote</button>
+    </div>
+</div>
+
+<script src="dropdown-script.js"></script>
+</body>
+</html>

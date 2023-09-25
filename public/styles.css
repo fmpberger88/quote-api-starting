@@ -1,0 +1,115 @@
+body {
+  background-color: #2e4a99;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+nav {
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #fff;
+}
+
+nav a {
+  margin: 10px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+}
+
+button {
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: #2e4a99;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #5788fa;
+  transition: background-color 0.2s;
+}
+
+#quote-container {
+  padding: 10px;
+  width: 60%;
+}
+
+.single-quote {
+  padding: 10px;
+}
+
+.quote-text {
+  font-style: italic;
+}
+
+/* Allgemeiner Container Stil */
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Stil für Formular Etiketten */
+#quote-container label {
+  margin: 10px 0;
+  display: block;
+}
+
+/* Stil für Formular Inputs */
+#quote-container input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+  background-color: #2e4a99;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+/* Stil für Formular Buttons */
+#quote-container button {
+  padding: 8px 12px;
+  margin-top: 10px;
+}
+
+/* Stil für eine Informationsmeldung oder einen Fehler */
+.message {
+  padding: 8px 12px;
+  margin-top: 15px;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+.success {
+  background-color: #4CAF50; /* Ein schönes Grün für erfolgreiche Meldungen */
+}
+
+.error {
+  background-color: #FF5733; /* Ein helleres Rot für Fehlermeldungen */
+}
+
