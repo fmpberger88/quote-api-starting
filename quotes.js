@@ -52,12 +52,14 @@ quoteRouter.put('/:id', (req, res) => {
 
 // Ein Delete-Endpoint um Quotes zu löschen
 quoteRouter.delete('/:id', (req, res) => {
-    const index = quotes.findIndex(q => q.id === req.params.id);
+    const idToDelete = req.params.id;
+    const index = quotes.findIndex(q => q.id === idToDelete);
+
     if (index !== -1) {
         const deleted = quotes.splice(index, 1);
-        res.json(deleted[0]);
+        res.status(200).json(deleted[0]);
     } else {
-        res.status(404).send();
+        res.status(404).json({ message: 'Quote not found' });
     }
 });
 
